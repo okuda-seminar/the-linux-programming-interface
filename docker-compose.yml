@@ -4,6 +4,8 @@ services:
     build:
       context: .
     container_name: the_linux_programming_interface
+    environmrnt:
+      - C_INCLUDE_PATH=/workspace/include
     privileged: true
     tty: true
     volumes:

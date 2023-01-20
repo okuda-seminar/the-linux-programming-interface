@@ -13,8 +13,9 @@ RUN apt-get update && apt-get install -y \
     iputils-ping net-tools \
     make \
     netcat-openbsd \
+    sudo \
     vim \
-    sudo
+    wget
 
 # install google test
 RUN git clone --depth=1 -b $BRANCH_OR_TAG -q https://github.com/google/googletest.git /googletest
