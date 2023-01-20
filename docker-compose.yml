@@ -1,0 +1,11 @@
+version: "3"
+services:
+  the_linux_programming_interface:
+    build:
+      context: .
+    container_name: the_linux_programming_interface
+    privileged: true
+    tty: true
+    volumes:
+      - ./:/workspace/
+    
